@@ -5,9 +5,36 @@ random.getstate():返回一个对象，表示随机数生成器当前的内部�
 random.setstate(state):state必须是从getstate()函数调用中获得的对象。setstate将内部状态恢复为state中的状态。
 Restore internal state from object returned by getstate().
 
-random.getrandbits(k):返回一个长度为k位（比特 二进制位）的随机长整数数据。
+
+
+
+整形随机数生成器函数：
+
+1.·random.getrandbits(k)·:
+返回一个长度为k位（比特 二进制位）的随机长整数数据。
 >>> random.getrandbits(1)
 0
 >>> random.getrandbits(1)
 1
+二进制表示 1 
 取值为 0 or 1
+
+
+2.random.randrange(stop) or random.randrange(start,stop=None,step=1):
+start:起始数,
+stop:终止数
+step:步长
+随机数生成空间为[start,stop) 包括start,不包括stop。
+>>> for i in range(10):
+	print(random.randrange(3),end=' ')
+2 0 2 2 2 0 1 2 2 0 
+>>> for i in range(10):
+	print(random.randrange(1,10,2),end=' ')
+7 9 1 1 5 9 7 5 7 3 
+
+
+3.random.randint(a,b):
+返回一个在ab范围内的整型值。
+>>> for i in range(10):
+	print(random.randint(1,3),end=' ')
+2 2 1 3 3 2 3 1 3 2 
