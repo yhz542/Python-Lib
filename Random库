@@ -43,3 +43,5 @@ step:步长
 
 
 随机序列生成器函数
+random.choice(seq):
+返回一个非空序列中的随机元素。seq必须非空，否则会给出异常，IndexError
