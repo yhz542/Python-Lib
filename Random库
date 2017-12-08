@@ -10,7 +10,7 @@ Restore internal state from object returned by getstate().
 
 整形随机数生成器函数：
 
-1.`random.getrandbits(k)`:
+1.random.getrandbits(k):
 返回一个长度为k位（比特 二进制位）的随机长整数数据。
 >>> random.getrandbits(1)
 0
