@@ -26,8 +26,7 @@ stop:终止数
 step:步长
 随机数生成空间为[start,stop) 包括start,不包括stop。
 >>> for i in range(10):
-	print(random.randrange(3),end=' ')
-2 0 2 2 2 0 1 2 2 0 
+	print(random.randrange(3),end=' ')2 0 2 2 2 0 1 2 2 0 
 >>> for i in range(10):
 	print(random.randrange(1,10,2),end=' ')
 7 9 1 1 5 9 7 5 7 3 
@@ -52,7 +51,6 @@ step:步长
 'c'
 seq可以为元组，列表，字符串
 
-
 2.random.shuffle(x):
 打乱x序列中所有元素的顺序。
 >>> x=[1,2,3]
@@ -61,11 +59,30 @@ seq可以为元组，列表，字符串
 [3, 1, 2]
 x只能为列表
 
-
 3.random.sample(population,k):
-返回列表population中随机k个元素，如果样本大小比k还大，会报出ValueError异常。
+返回列表population中随机k个元素，如果样本大小比k还大，会报出ValueError异常。不会改变参数population中的内容
 >>> random.sample({1,2,3},2)
 [2, 3]
 >>> random.sample([4,5,6,7],3)
 [7, 4, 5]
 population必须是列表或集合
+
+
+
+基于统计分布的函数
+
+1.random.uniform(a,b)
+返回一个随机浮点数，取值区间为[a,b)or[a,b]能否取到b取决于四舍五入的结果
+>>> random.uniform(1,2)
+1.204736662816396
+
+2.random.normalvariate(mu,sigma):
+基于正态分布生成随机数,mu是平均值,sigma是标准差
+
+
+3.random.gauss(mu,sigma):
+利用高斯分布生成随机数,两个参数与正态分布相同，与正态分布相比，此函数更快
+
+
+4.random.triangular(low,high,mode):
+辛普森分布或三角形分布(暂时不知道有什么用）
