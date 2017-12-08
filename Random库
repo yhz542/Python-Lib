@@ -1,0 +1,13 @@
+random.seed(a=None,version=2)：函数种子初始化。很少用，略过
+
+random.getstate():返回一个对象，表示随机数生成器当前的内部状态。该对象可基于setstate()使用。很少用到，略过
+
+random.setstate(state):state必须是从getstate()函数调用中获得的对象。setstate将内部状态恢复为state中的状态。
+Restore internal state from object returned by getstate().
+
+random.getrandbits(k):返回一个长度为k位（比特 二进制位）的随机长整数数据。
+>>> random.getrandbits(1)
+0
+>>> random.getrandbits(1)
+1
+取值为 0 or 1
