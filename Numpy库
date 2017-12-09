@@ -1,0 +1,41 @@
+Numpy数据对象：ndarray（N维数组）numpy.ndarray
+
+数组的属性：
+dtype :数组中数据的类型
+shape :数组各个维度的长度
+size :大小或者说元素个数
+itemsize :单独每一项的大小
+data :数据
+ndim :维度
+
+example:
+>>> x=np.array([[[1,2],[3,4]],[[5,6],[7,8]]])# 2*2*2维
+>>> x.dtype
+dtype('int32')
+>>> x.shape
+(2, 2, 2)
+>>> x.size
+8          # 2*2*2
+>>> x.itemsize
+4          # 32位int 4个字节
+>>> x.data
+<memory at 0x000001B7AF5C9138>  # 不明觉厉
+>>> x.ndim
+3
+
+other example:
+>>> x=np.array(((100,200,300),
+	    (111,222,333),
+	    (123,456,789)))# 3*3
+>>> x.dtype
+dtype('float64')
+>>> x.shape
+(3, 3)
+>>> x.size
+9
+>>> x.itemsize
+8           # 64位
+>>> x.data
+<memory at 0x000001B7AFDC38B8>
+>>> x.ndim
+2
