@@ -39,3 +39,22 @@ dtype('float64')
 <memory at 0x000001B7AFDC38B8>
 >>> x.ndim
 2
+
+shape可以查看数组的行列，或者改变数组的shape
+forexample
+x = np.array([[1,2],[3,4]])
+x.shape
+>>>(2,2)
+x.shape=(4,1)
+
+x
+>>>[[1],[2],[3],[4]]
+
+reshape也可以改变shape,但是返回的是reshape后的副本,原数组并没有改变
+x.reshape(1,-1)
+>>>[[1,2,3,4]]
+x
+>>>[[1],[2],[3],[4]]
+
+axis=1代表对行操作
+axis=0代表队列操作
