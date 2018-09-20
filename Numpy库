@@ -97,3 +97,9 @@ np数组可直接进行判断生成bool数组
 a=[1,2,3]
 a<4
 [true , true , true]
+
+np.savetxt('filename',array)
+np.loadtxt()
+
+np.save()二进制 文件名后缀为npy
+np.load()
