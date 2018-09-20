@@ -69,3 +69,17 @@ np.flatten()
 np.squeeze()将所有数量等于1的维度全部压缩。只留下数目不为1的维度
 
 np.delete()删除 参数分别为要删除的元素的所属数组，所处位置以及axis
+np.arange(start,stop,step)生成一组数 可配合reshape形成数组
+np.asarray（)将列表转换成数组
+np.astype ()改变数据类型
+np.hstack()按行合并
+np.vstack()按列合并
+np.concatenate(,axis)同上
+np.tile()复制矩阵
+np.repeat()
+np.c_
+np.r_
+np.column_stack()
+np.row_stack()
+np.insert()
+
