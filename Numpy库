@@ -86,6 +86,9 @@ np.insert(array , index , value ,axis=None) 按axis的下标index插入value值�
 
 np.newaxis添加一个新维度
 a = np.arange(4)
+a = [ 0 ,1 ,2, 3 ]
 b= a[:,np.newaxis] 在列上添加一个维度
+b= [[0],[1],[2],[3]]
 c = a[np.newaxis ,:]在行上添加一个维度
+c = [[0,1,2,3]]
 np.info() numpy专用help
