@@ -74,12 +74,13 @@ np.asarray（)将列表转换成数组
 np.astype ()改变数据类型
 np.hstack()按行合并
 np.vstack()按列合并
-np.concatenate(,axis)同上
+np.concatenate(,axis)同上 可通过给axis赋值选择行还是列
 np.tile()复制矩阵
-np.repeat()
-np.c_
-np.r_
-np.column_stack()
-np.row_stack()
-np.insert()
+np.repeat(array , repeats ,axis = None )将数组中的元素进行重复复制 ， axis不赋值意味着将返回扁平的一维数组。
+np.c_[]按列合并 合成行
+np.r_[]按行合并 合成列
+np.column_stack()按列合并 concatenate hstack类似
+np.row_stack()按行合并
+np.insert(array , index , value ,axis=None) 按axis的下标index插入value值到array中，如果axis为默认值则直接按一维数组处理
 
+np.info() numpy专用help
