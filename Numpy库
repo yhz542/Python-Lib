@@ -83,4 +83,9 @@ np.column_stack()按列合并 concatenate hstack类似
 np.row_stack()按行合并
 np.insert(array , index , value ,axis=None) 按axis的下标index插入value值到array中，如果axis为默认值则直接按一维数组处理
 
+
+np.newaxis添加一个新维度
+a = np.arange(4)
+b= a[:,np.newaxis] 在列上添加一个维度
+c = a[np.newaxis ,:]在行上添加一个维度
 np.info() numpy专用help
